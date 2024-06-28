@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// schema for the user
+
 const userSchema = new mongoose.Schema({
   id: { type: Number, unique: true, required: true },
   first_name: { type: String, required: true },
@@ -15,4 +17,4 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-module.exports = User;
+module.exports = User; // exporting the user schema
