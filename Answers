@@ -1,0 +1,39 @@
+1.) How long did it take you to complete this assignment?
+
+It took approximately 4 to 6 hours to complete the assignment, including time spent on setting up the project, implementing the API endpoints, writing tests, and documenting the project.
+
+2.) What about this assignment did you find most challenging?
+
+The most challenging part of the assignment was implementing the search, pagination, and sorting functionalities for the GET /api/users endpoint. Ensuring that these features work seamlessly together required careful consideration of query parameter handling and database querying.
+
+3).  What about this assignment did you find unclear?
+
+The assignment was generally clear, but the requirement to use a schema ID separate from the MongoDB _id was initially a bit confusing for me. Once clarified, it was straightforward to implement.
+
+4).  What challenges did you face that you did not expect?
+
+An unexpected challenge was managing the validation of user data, especially ensuring that the IDs are unique and handling the bulk creation of users. Additionally, setting up and integrating the logging mechanism to emit proper logs for different operations took more time than anticipated.
+
+5).  Do you feel like this assignment has an appropriate level of difficulty?
+
+Yes, this assignment has an appropriate level of difficulty for a Full Stack Developer role. It covers a range of important skills, including CRUD operations, query parameter handling, data validation, and error handling, which are crucial for backend development.
+
+6).  Briefly explain your decisions to use tools, frameworks, and libraries like Express, Mongoose, etc.
+
+Express: Chosen for its simplicity and flexibility in creating RESTful APIs. It is lightweight and has a large ecosystem of middleware.
+
+Mongoose: Used for interacting with MongoDB due to its powerful schema-based solutions for modeling application data. It simplifies data validation and querying.
+
+7).  Did you make certain assumptions and decisions around the application? Please elaborate on your reasonings.
+
+a). Schema ID vs. MongoDB _id:
+Decision: Used a separate schema ID for user operations.
+Reasoning: This was required by the task to have a user-friendly identifier.
+
+b).  Default Pagination Limit:
+Decision: Set the default limit to 5 users per page.
+Reasoning: This ensures manageable response sizes by default.
+
+c).  Case-Insensitive Search:
+Decision: Made the search functionality case-insensitive.
+Reasoning: It provides a more user-friendly search experience.
